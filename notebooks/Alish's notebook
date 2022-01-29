@@ -1,0 +1,26 @@
+from tkinter import *
+
+import os
+
+os.system('clear')
+
+root = Tk()
+
+root.title("Alish's World")
+
+root.geometry("1080x1080")
+
+def hello_soulmate():
+    hello_label = Label(root, text="Hello " + myTextbox.get())
+    hello_label.pack()
+
+myLabel = Label(root, text = 'Enter your name')
+myLabel.pack()
+
+myTextbox = Entry(root, width = 30)
+myTextbox.pack()
+
+myButton = Button(root, text = 'Ask', command = hello_soulmate)
+myButton.pack()
+
+root.mainloop()
